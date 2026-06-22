@@ -1,4 +1,68 @@
-body {
-    background-color: #ffc0cb;
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Pixelify+Sans:wght@400..700&display=swap');
 
+body, html {
+    background-color: #ffc0cb;
+    font-family: "Bubblegum Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.banner {
+    background-color: rgb(164, 198, 255);
+    height: 100vh;
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+
+.banner h1 {
+    margin: 14px 0 20px;
+}
+
+.banner h3 {
+    margin: 0 0 30px;
+}
+
+.banner h4 {
+    margin: 0;
+}
+
+.key-art {
+    background: url(../img/nono-key-art.jpg) no-repeat 0 0;
+    background-size: 100%;
+    height: 344px;
+    position: absolute; top: 100px; right: 50px;
+}
+
+a.cta, button.cta {
+    font-family: "Bubblegum Sans", sans-serif;
+    font-size: 30px;
+    background: white;
+    display: inline-block;
+    border: 10px solid rgba(0, 0, 0, 0.15);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+a.cta.alt, button.cta.alt {
+    background: #ffc0cb;
+    border: 10px solid rgba(141, 37, 37, 0.15);
 }
