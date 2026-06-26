@@ -20,7 +20,7 @@
     <nav>
         <a href="#" class="logo"><img src="./img/nono-logo.png" alt="Nono Logo" height="150"></a>
         <ul>
-            <li><a href="#signup">Sign Up</a></li>
+            <li><a href="javascript:()" onclick="showPopup();">Sign Up</a></li>
             <li><a href="#story">The Story</a></li>
             <li><a href="#more-info">Background Info</a></li>
         </ul>
@@ -28,7 +28,7 @@
     <div class="info">
         <h2>How Nono Came to Be</h2>
         <p>Nono is the creation of a woman named <span class="highlight">Celia Thorne.</span> Stitched with love and care, and some wonderous magic, Nono was born from a simple idea: to create a plush companion that would bring joy and comfort to those who needed it most. Celia has made many other plush toys, but none quite like Nono.</p>
-        <button class="cta" id="story">Learn More About Celia</button>
+        <button class="cta" id="story" onclick="showPopup();">Learn More About Celia</button>
     </div>
     <div class="sep">
         
@@ -57,22 +57,26 @@
             <p>Website was made during a web development project. <br>Made by Beau Parker &copy; 2026</p>
         </div>
     </footer>
-    <div class="popup">
+    <div class="popup" id='popup'>
         <div class="blanket">
         <div class="content">
             <h2>Learn More About Fabricated</h2>
             <form action="#">
-                <div class="item">
-                <label>Enter your email:</label>
-                <input type="email" id="email" name="email" placeholder="your.email@example.com">
-                </div>
-                <div class="item">
-                <label>Enter your password:</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password">
+                <div class="row">
+                    <div class="item">
+                    <label>Enter your email:</label>
+                    <input type="text" id="email" name="email" placeholder="your.email@example.com">
+                    </div>
+                    <div class="item">
+                    <label>Enter your password:</label>
+                    <input type="text" id="password" name="password" placeholder="Enter your password">
+                    </div>
                 </div>
                 <button class="cta">Submit</button>
-            <button class="close">X</button>
+            <button class="close" onclick="showPopup();">X</button>
         </div> 
         </div>
     </div>
+
+    <script src="script.js" type="text/javascript"></script>
 </html>
