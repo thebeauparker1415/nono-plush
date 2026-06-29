@@ -1,11 +1,9 @@
-console.log('hey there!')
-
 function showPopup () {
     var popup = document.getElementById('popup');
-    popup.classlist.add('show')
+    popup.classList.add('show')
 }
 
 function hidePopup () {
     var popup = document.getElementById('popup');
-    popup.classlist.remove('show')
+    popup.classList.remove('show')
 }
